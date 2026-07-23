@@ -1,0 +1,477 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#edf2f7;
+
+    font-family:Arial,Helvetica,sans-serif;
+
+    color:#222;
+
+}
+
+/* ===========================
+   LAYOUT
+=========================== */
+
+.container{
+
+    display:flex;
+
+    min-height:100vh;
+
+}
+
+/* ===========================
+   LEFT PANEL
+=========================== */
+
+.sidebar{
+
+    width:420px;
+
+    background:#fff;
+
+    padding:25px;
+
+    overflow-y:auto;
+
+    border-right:1px solid #ddd;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+.logo{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+}
+
+.logo img{
+
+    width:180px;
+
+}
+
+.logo h2{
+
+    margin-top:15px;
+
+    color:#1B5FC4;
+
+}
+
+/* ===========================
+   FORM
+=========================== */
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:15px;
+
+}
+
+.field{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.field.full{
+
+    grid-column:1 / -1;
+
+}
+
+.field label{
+
+    margin-bottom:6px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.field input,
+.field select{
+
+    height:42px;
+
+    padding:10px;
+
+    border:1px solid #ccc;
+
+    border-radius:6px;
+
+    font-size:14px;
+
+}
+
+.field input:focus,
+.field select:focus{
+
+    outline:none;
+
+    border-color:#2E86FF;
+
+}
+
+/* ===========================
+BUTTONS
+=========================== */
+
+.buttons{
+
+    margin-top:30px;
+
+    display:grid;
+
+    gap:12px;
+
+}
+
+.buttons button{
+
+    height:46px;
+
+    border:none;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+#generateBtn{
+
+    background:#2E86FF;
+
+    color:#fff;
+
+}
+
+#downloadBtn{
+
+    background:#1B5FC4;
+
+    color:#fff;
+
+}
+
+#printBtn{
+
+    background:#2db36d;
+
+    color:#fff;
+
+}
+
+#saveBtn{
+
+    background:#ff9800;
+
+    color:#fff;
+
+}
+
+.buttons button[type="reset"]{
+
+    background:#444;
+
+    color:#fff;
+
+}
+
+.buttons button:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/* ===========================
+RIGHT PANEL
+=========================== */
+
+.preview{
+
+    flex:1;
+
+    overflow:auto;
+
+    padding:30px;
+
+}
+
+/* ===========================
+A4 LETTER
+=========================== */
+
+.sheet{
+
+    width:210mm;
+
+    min-height:297mm;
+
+    background:#fff;
+
+    margin:auto;
+
+    box-shadow:0 5px 25px rgba(0,0,0,.15);
+
+}
+
+/* HEADER */
+
+.head-bar{
+
+    height:50px;
+
+    background:#2E86FF;
+
+}
+
+.head-inner{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:30px 50px;
+
+}
+
+.logo-wrap img{
+
+    height:70px;
+
+}
+
+.brand-tag{
+
+    font-size:13px;
+
+    color:#555;
+
+    margin-top:5px;
+
+}
+
+.contact{
+
+    text-align:right;
+
+    font-size:13px;
+
+    line-height:1.6;
+
+}
+
+.rule{
+
+    height:1px;
+
+    background:#ccc;
+
+    margin:0 50px;
+
+}
+
+/* BODY */
+
+.body{
+
+    padding:45px 50px;
+
+    font-family:"Times New Roman",serif;
+
+    font-size:15pt;
+
+    line-height:1.9;
+
+}
+
+.ref-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:40px;
+
+    font-size:11pt;
+
+}
+
+.center-title{
+
+    text-align:center;
+
+    margin-top:-15px;
+
+    margin-bottom:30px;
+
+    font-weight:bold;
+
+}
+
+.subject{
+
+    margin-bottom:30px;
+
+}
+
+.salut{
+
+    margin-bottom:20px;
+
+}
+
+.body p{
+
+    text-align:justify;
+
+    margin-bottom:22px;
+
+}
+
+.body h1{
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+    font-size:18pt;
+
+}
+
+/* SIGNATURE */
+
+.sign{
+
+    margin-top:80px;
+
+}
+
+.sign-line{
+
+    width:220px;
+
+    border-bottom:1px solid #444;
+
+    margin-bottom:10px;
+
+}
+
+.who{
+
+    font-weight:bold;
+
+}
+
+.stamp-note{
+
+    margin-top:15px;
+
+    font-size:11px;
+
+    color:#777;
+
+}
+
+/* FOOTER */
+
+.foot{
+
+    margin-top:50px;
+
+}
+
+.foot-web{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:0 50px 10px;
+
+    font-size:12px;
+
+}
+
+.foot-bar{
+
+    height:35px;
+
+    background:#2E86FF;
+
+}
+
+/* ===========================
+PRINT
+=========================== */
+
+@page{
+
+    size:A4;
+
+    margin:0;
+
+}
+
+@media print{
+
+    body{
+
+        background:#fff;
+
+    }
+
+    .sidebar{
+
+        display:none;
+
+    }
+
+    .preview{
+
+        padding:0;
+
+    }
+
+    .sheet{
+
+        margin:0;
+
+        box-shadow:none;
+
+        width:210mm;
+
+        height:297mm;
+
+    }
+
+}
