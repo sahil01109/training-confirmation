@@ -182,7 +182,13 @@ BUTTONS
 
 }
 
+#printBtn{
 
+    background:#2db36d;
+
+    color:#fff;
+
+}
 
 #saveBtn{
 
@@ -219,7 +225,6 @@ RIGHT PANEL
     padding:30px;
 
 }
-
 /* ===========================
 A4 LETTER
 =========================== */
@@ -228,21 +233,33 @@ A4 LETTER
 
     width:210mm;
 
-    min-height:297mm;
+    height:297mm;
 
     background:#fff;
 
     margin:auto;
 
+    position:relative;
+
+    overflow:hidden;
+
     box-shadow:0 5px 25px rgba(0,0,0,.15);
+
+    page-break-inside:avoid;
+
+    break-inside:avoid;
 
 }
 
-/* HEADER */
+
+
+/* ===========================
+HEADER
+=========================== */
 
 .head-bar{
 
-    height:50px;
+    height:13mm;
 
     background:#2E86FF;
 
@@ -254,23 +271,25 @@ A4 LETTER
 
     justify-content:space-between;
 
-    padding:30px 50px;
+    align-items:flex-start;
+
+    padding:5mm 14mm 6mm;
 
 }
 
 .logo-wrap img{
 
-    height:70px;
+    height:16mm;
 
 }
 
 .brand-tag{
 
-    font-size:13px;
+    font-size:11px;
 
     color:#555;
 
-    margin-top:5px;
+    margin-top:3px;
 
 }
 
@@ -278,9 +297,9 @@ A4 LETTER
 
     text-align:right;
 
-    font-size:13px;
+    font-size:11px;
 
-    line-height:1.6;
+    line-height:1.45;
 
 }
 
@@ -290,21 +309,23 @@ A4 LETTER
 
     background:#ccc;
 
-    margin:0 50px;
+    margin:0 14mm;
 
 }
 
-/* BODY */
+/* ===========================
+BODY
+=========================== */
 
 .body{
 
-    padding:45px 50px;
+    padding:8mm 14mm 0;
 
     font-family:"Times New Roman",serif;
 
-    font-size:15pt;
+    font-size:13pt;
 
-    line-height:1.9;
+    line-height:1.55;
 
 }
 
@@ -314,41 +335,9 @@ A4 LETTER
 
     justify-content:space-between;
 
-    margin-bottom:40px;
+    margin-bottom:18px;
 
-    font-size:11pt;
-
-}
-
-.center-title{
-
-    text-align:center;
-
-    margin-top:-15px;
-
-    margin-bottom:30px;
-
-    font-weight:bold;
-
-}
-
-.subject{
-
-    margin-bottom:30px;
-
-}
-
-.salut{
-
-    margin-bottom:20px;
-
-}
-
-.body p{
-
-    text-align:justify;
-
-    margin-bottom:22px;
+    font-size:10pt;
 
 }
 
@@ -356,51 +345,155 @@ A4 LETTER
 
     text-align:center;
 
-    margin-bottom:20px;
+    font-size:16pt;
 
-    font-size:18pt;
-
-}
-
-/* SIGNATURE */
-
-.sign{
-
-    margin-top:80px;
+    margin-bottom:15px;
 
 }
 
-.sign-line{
+.center-title{
 
-    width:220px;
-
-    border-bottom:1px solid #444;
-
-    margin-bottom:10px;
-
-}
-
-.who{
+    text-align:center;
 
     font-weight:bold;
 
-}
-
-.stamp-note{
-
-    margin-top:15px;
-
-    font-size:11px;
-
-    color:#777;
+    margin-bottom:18px;
 
 }
 
-/* FOOTER */
+.subject{
+
+    margin-bottom:16px;
+
+}
+
+.salut{
+
+    margin-bottom:12px;
+
+}
+
+.body p{
+
+    text-align:justify;
+
+    margin-bottom:8px;
+
+}
+
+/* ===========================
+SIGNATURE
+=========================== */
+
+.sign{
+
+    margin-top:28px;
+
+}
+
+.signature-area{
+
+    position:relative;
+
+    width:250px;
+
+}
+
+.company-stamp{
+
+    position:absolute;
+
+    width:125px;
+
+    right:5px;
+
+    top:-25px;
+
+
+
+    z-index:1;
+
+}
+
+.signature-container{
+
+    width:220px;
+
+}
+
+.signature{
+
+    font-family:"Alex Brush",cursive;
+
+    font-size:40px;
+
+    line-height:1;
+
+    color:#16202B;
+
+}
+
+.signature-tail{
+
+    display:block;
+
+    margin-top:-10px;
+
+}
+
+.signature-tail path{
+
+    fill:none;
+
+    stroke:#16202B;
+
+    stroke-width:2;
+
+    stroke-linecap:round;
+
+}
+
+.signature-line{
+
+    width:200px;
+
+    border-bottom:1px solid #bbb;
+
+    margin-top:-5px;
+
+}
+
+.signature-name{
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-top:8px;
+
+}
+
+.signature-designation{
+
+    font-size:13px;
+
+    color:#555;
+
+}
+
+/* ===========================
+FOOTER
+=========================== */
 
 .foot{
 
-    margin-top:50px;
+    position:absolute;
+
+    left:0;
+
+    right:0;
+
+    bottom:0;
 
 }
 
@@ -410,15 +503,15 @@ A4 LETTER
 
     justify-content:space-between;
 
-    padding:0 50px 10px;
+    padding:0 14mm 3mm;
 
-    font-size:12px;
+    font-size:11px;
 
 }
 
 .foot-bar{
 
-    height:35px;
+    height:8mm;
 
     background:#2E86FF;
 
@@ -427,45 +520,60 @@ A4 LETTER
 /* ===========================
 PRINT
 =========================== */
+/* ===========================
+   PRINT (UPDATED)
+=========================== */
 
-@page{
-
-    size:A4;
-
-    margin:0;
-
+@page {
+    size: A4 portrait;
+    margin: 0;
 }
 
-@media print{
-
-    body{
-
-        background:#fff;
-
+@media print {
+    html, body {
+        width: 210mm;
+        height: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: #fff;
+        overflow: hidden !important;
+        page-break-after: avoid !important;
+        break-after: avoid !important;
     }
 
-    .sidebar{
-
-        display:none;
-
+    /* Hide non-printable panels */
+    .sidebar, .buttons, .grid {
+        display: none !important;
     }
 
-    .preview{
-
-        padding:0;
-
+    .container {
+        display: block !important;
+        min-height: auto !important;
     }
 
-    .sheet{
-
-        margin:0;
-
-        box-shadow:none;
-
-        width:210mm;
-
-        height:297mm;
-
+    .preview {
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow: visible !important;
     }
 
+    .sheet {
+        width: 210mm !important;
+        max-height: 296mm !important; /* Slightly smaller than 297mm to prevent page break spillover */
+        height: 100% !important;
+        margin: 0 !important;
+        box-shadow: none !important;
+        overflow: hidden !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+    }
+
+    .foot {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
 }

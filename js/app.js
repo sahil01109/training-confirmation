@@ -238,16 +238,8 @@ function updatePreview() {
         document.getElementById("endDate").value
     );
 
-    update(
-        "signPreview",
-        document.getElementById("signatory").value
-    );
 
-    update(
-        "designationPreview",
-        document.getElementById("designation").value
-    );
-
+ 
 }
 
 
@@ -274,3 +266,20 @@ document
 );
 
 
+// =========================================
+// Print
+// =========================================
+
+document
+.getElementById("printBtn")
+.addEventListener(
+
+    "click",
+
+    function(){
+
+        window.print();
+
+    }
+
+);

@@ -79,11 +79,17 @@ function generatePDF() {
     };
 
     html2pdf()
-
         .set(options)
-
         .from(letter)
-
+        .toPdf()
+        .get('pdf')
+        .then(function (pdf) {
+            // Guarantee exactly 1 page
+            const totalPages = pdf.internal.getNumberOfPages();
+            if (totalPages > 1) {
+                pdf.deletePage(2);
+            }
+        })
         .save();
 
 }
