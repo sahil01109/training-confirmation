@@ -213,15 +213,17 @@ function updatePreview() {
         document.getElementById("roll").value
     );
 
-    update(
-        "durationPreview",
-        document.getElementById("duration").value
-    );
+const durationSelect = document.getElementById("duration");
 
-    update(
-        "durationPreview2",
-        document.getElementById("duration").value
-    );
+update(
+    "durationPreview",
+    durationSelect.options[durationSelect.selectedIndex].text
+);
+
+update(
+    "durationPreview2",
+    durationSelect.options[durationSelect.selectedIndex].text
+);
 
     update(
         "domainPreview",

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
 
     <meta charset="UTF-8">
 
@@ -16,248 +16,220 @@
 
 <body>
 
-<div class="container">
+    <div class="container">
 
-    <!-- ========================= -->
-    <!-- LEFT SIDE -->
-    <!-- ========================= -->
+        <!-- ========================= -->
+        <!-- LEFT SIDE -->
+        <!-- ========================= -->
 
-    <aside class="sidebar">
+        <aside class="sidebar">
 
-        <div class="logo">
+            <div class="logo">
 
-            <img
-            src="https://advozy.com/wp-content/uploads/2026/05/Copy-of-logoAd.png"
-            alt="Advozy">
+                <img src="https://advozy.com/wp-content/uploads/2026/05/Copy-of-logoAd.png" alt="Advozy">
 
-            <h2>Training Confirmation</h2>
-
-        </div>
-
-
-        <form id="studentForm">
-
-
-            <div class="grid">
-
-
-                <div class="field">
-
-                    <label>Reference No.</label>
-
-                    <input
-                    id="reference"
-                    readonly>
-
-                </div>
-
-
-                <div class="field">
-
-                    <label>Date</label>
-
-                    <input
-                    type="date"
-                    id="date">
-
-                </div>
-
-
-                <div class="field full">
-
-                    <label>Student Name</label>
-
-                    <input
-                    id="studentName">
-
-                </div>
-
-
-            
-
-
-                <div class="field">
-
-                    <label>University Roll No.</label>
-
-                    <input
-                    id="roll">
-
-                </div>
-
-
-                <div class="field">
-
-                    <label>Course</label>
-
-                    <input
-                    id="course">
-
-                </div>
-
-
-                <div class="field">
-
-                    <label>Branch</label>
-
-                    <input
-                    id="branch">
-
-                </div>
-
-
-                <div class="field full">
-
-                    <label>College Name</label>
-
-                    <input
-                    id="college">
-
-                </div>
-
-
-                <div class="field full">
-
-                    <label>Training Domain</label>
-
-                    <input
-                    id="domain">
-
-                </div>
-
-
-                <div class="field">
-
-                    <label>Duration</label>
-
-                    <select id="duration">
-
-                        <option>15</option>
-
-                        <option>30</option>
-
-                        <option selected>45</option>
-
-                        <option>60</option>
-
-                        <option>90</option>
-
-                    </select>
-
-                </div>
-
-
-                <div class="field">
-
-                    <label>Start Date</label>
-
-                    <input
-                    type="date"
-                    id="startDate">
-
-                </div>
-
-
-                <div class="field">
-
-                    <label>End Date</label>
-
-                    <input
-                    type="date"
-                    id="endDate"
-                    readonly>
-
-                </div>
-
-
-                <div class="field">
-
-                    <label>Authorized Signatory</label>
-
-                    <input
-                    id="signatory"
-                    value="Authorized Signatory">
-
-                </div>
-
-
-                <div class="field">
-
-                    <label>Designation</label>
-
-                    <input
-                    id="designation"
-                    value="Training Manager">
-
-                </div>
+                <h2>Training Confirmation</h2>
 
             </div>
 
 
+            <form id="studentForm">
 
-            <div class="buttons">
 
-                <button type="button" id="generateBtn">
+                <div class="grid">
 
-                    Generate Letter
 
-                </button>
+                    <div class="field">
 
-                <button type="button" id="downloadBtn">
+                        <label>Reference No.</label>
 
-                    Download PDF
+                        <input id="reference" readonly>
 
-                </button>
+                    </div>
 
-                <button type="button" id="printBtn">
 
-                    Print
+                    <div class="field">
 
-                </button>
+                        <label>Date</label>
 
-                <button type="button" id="saveBtn">
+                        <input type="date" id="date">
 
-                    Save Student
+                    </div>
 
-                </button>
 
-                <button type="reset">
+                    <div class="field full">
 
-                    Reset
+                        <label>Student Name</label>
 
-                </button>
+                        <input id="studentName">
+
+                    </div>
+
+
+
+
+
+                    <div class="field">
+
+                        <label>University Roll No.</label>
+
+                        <input id="roll">
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label>Course</label>
+
+                        <input id="course">
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label>Branch</label>
+
+                        <input id="branch">
+
+                    </div>
+
+
+                    <div class="field full">
+
+                        <label>College Name</label>
+
+                        <input id="college">
+
+                    </div>
+
+
+                    <div class="field full">
+
+                        <label>Training Domain</label>
+
+                        <input id="domain">
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label>Duration</label>
+
+                        <select id="duration">
+                            <option value="45">45 Days</option>
+                            <option value="42">6 Weeks</option>
+                            <option value="60">2 Months</option>
+                            <option value="90">3 Months</option>
+                        </select>
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label>Start Date</label>
+
+                        <input type="date" id="startDate">
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label>End Date</label>
+
+                        <input type="date" id="endDate" readonly>
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label>Authorized Signatory</label>
+
+                        <input id="signatory" value="Authorized Signatory">
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label>Designation</label>
+
+                        <input id="designation" value="Training Manager">
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="buttons">
+
+                    <button type="button" id="generateBtn">
+
+                        Generate Letter
+
+                    </button>
+
+                    <button type="button" id="downloadBtn">
+
+                        Download PDF
+
+                    </button>
+
+                    <button type="button" id="printBtn">
+
+                        Print
+
+                    </button>
+
+                    <button type="button" id="saveBtn">
+
+                        Save Student
+
+                    </button>
+
+                    <button type="reset">
+
+                        Reset
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </aside>
+
+
+        <!-- ========================= -->
+        <!-- RIGHT SIDE -->
+        <!-- ========================= -->
+
+        <main class="preview">
+
+            <div id="letterContainer">
+
+                Loading Letter...
 
             </div>
 
-        </form>
+        </main>
 
-    </aside>
-
-
-    <!-- ========================= -->
-    <!-- RIGHT SIDE -->
-    <!-- ========================= -->
-
-    <main class="preview">
-
-        <div id="letterContainer">
-
-            Loading Letter...
-
-        </div>
-
-    </main>
-
-</div>
+    </div>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
-<script src="js/storage.js"></script>
+    <script src="js/storage.js"></script>
 
-<script src="js/pdf.js"></script>
+    <script src="js/pdf.js"></script>
 
-<script src="js/app.js"></script>
+    <script src="js/app.js"></script>
 
 </body>
 
